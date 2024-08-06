@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question no 4</title>
+
+    <script>
+        function calculate()
+        {
+            var n1=parseInt(document.getElementById("num1").value)
+            var n2=parseInt(document.getElementById("num2").value)
+           var opid=document.getElementById("op").value
+          
+           if(opid==="+")
+           {
+                var add=n1+n2;
+                document.getElementById("mydiv").innerHTML=add;
+           }
+
+           if(opid==="-")
+           {
+                var sub=n1-n2;
+                document.getElementById("mydiv").innerHTML=sub;
+           }
+
+           if(opid==="*")
+           {
+                var mul=n1*n2;
+                document.getElementById("mydiv").innerHTML=mul;
+           }
+            
+           }
+    </script>
+</head>
+<body>
+    Enter Number1 :<input type="text" id="num1" name="num1"><br>
+    Enter operator:<input type="text" id="op" name="op"><br>
+    Enter Number2 :<input type="text" id="num2" name="num2"><br>
+    <button type="button" value="cal" id="submit" name="cal" onclick="calculate()">Calculate</button>
+    <div id="mydiv"></div>
+</body>
+</html>

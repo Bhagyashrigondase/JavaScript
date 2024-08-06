@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question No.3</title>
+    <script>
+        function displayevenno(){
+        var n=parseInt(document.getElementById("num").value)
+        for(var i=1;i<=n;i++)
+        {
+            if(i%2===0)
+             //document.write(i)+"<br>"
+            document.getElementById("mydiv").innerHTML+=i+"<br>"
+        }
+    }
+    </script>
+</head>
+<body>
+    Enter number:<input type="text" id="num" name="num"><br>
+    <button type="button" value="btn" id="btnid" name="button" onclick="displayevenno()">Display Even No.</button>
+    <div id="mydiv"></div>
+</body>
+</html>

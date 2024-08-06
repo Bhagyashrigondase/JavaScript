@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question no.2</title>
+    <script>
+        function displaymsg(){
+            var id=parseInt(document.getElementById("num").value)
+            var mg=document.getElementById("msg").value
+            for(var i=1;i<=id;i++)
+            {
+                //document.write(mg)
+                document.getElementById("mydiv").innerHTML+=mg+"<br>"
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    Enter Number:<input type="text" id="num" autofocus>
+    Enter Message:<input type="text"  id="msg">
+    <button type="button" name="btn" value="printmsg" id="btn" onclick="displaymsg()">Print Message</button>
+    <div id="mydiv"></div>
+</body>
+</html>
